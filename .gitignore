@@ -1,0 +1,24 @@
+# Build artifacts
+/target
+
+# Local documents directory
+/documents
+
+# Sensitive configuration files - DO NOT COMMIT
+config.toml
+service_account.json
+
+# Environment files
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

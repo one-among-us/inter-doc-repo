@@ -1,0 +1,18 @@
+[server]
+host = "0.0.0.0"
+port = 3000
+
+[jwt]
+secret = "your-secret-key-here-change-this"
+expiry_hours = 24
+
+[google_oauth]
+client_id = "your-google-oauth-client-id"
+client_secret = "your-google-oauth-client-secret"
+redirect_uri = "http://localhost:3000/callback"
+allowed_email_domain = "oneamongus.ca"
+
+[google_drive]
+service_account_key_path = "./service_account.json"
+shared_drive_id = "your-shared-drive-id"
+documents_index_file_id = "your-google-sheets-spreadsheet-id"
