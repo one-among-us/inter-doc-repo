@@ -86,6 +86,8 @@ To get a Google Drive file ID:
 
 ### 4. Build and Run
 
+**Native**
+
 ```bash
 # Check for errors
 cargo check
@@ -95,6 +97,17 @@ cargo build
 
 # Run the application
 cargo run
+```
+
+**Docker**
+
+```bash
+# Run directly
+docker build -t oau-interdocrep . 
+docker run -d -v ./config.toml:/app/config.toml -v ./service_account.json:/app/service_account.json -p 3000:3000 oau-interdocrep
+
+# Run with docker-compose
+docker compose up -d
 ```
 
 The server will start on `http://localhost:3000`
